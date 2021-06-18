@@ -1,9 +1,3 @@
-.social-list-icon {
-  height: 20px;
-  width: 20px;
-  transition: fill var(--anim-d) var(--anim-t);
-}
-
 .social-list-item-link {
   height: 44px;
   width: 44px;
@@ -13,14 +7,20 @@
   justify-content: center;
   align-items: center;
   transition: background-color var(--anim-d) var(--anim-t);
+
+  &:hover,
+  &:focus {
+    background-color: var(--focus-colour);
+  }
 }
 
-.social-list-item-link:hover,
-.social-list-item-link:focus {
-  background-color: var(--focus-colour);
-}
+.social-list-icon {
+  height: 20px;
+  width: 20px;
+  transition: fill var(--anim-d) var(--anim-t);
 
-.social-list-item-link:hover .social-list-icon,
-.social-list-item-link:focus .social-list-icon {
-  fill: var(--dark-text-colour);
+  .social-list-item-link:hover &,
+  .social-list-item-link:focus & {
+    fill: var(--dark-text-colour);
+  }
 }

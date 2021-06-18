@@ -16,9 +16,6 @@
 @import "./components/backdrop";
 @import "./components/modal-window";
 @import "./components/modal-form";
-@import ".";
-@import ".";
-@import ".";
 
 // LAYOUT
 @import "./layout/header";
@@ -32,7 +29,3 @@
 @import "./layout/portfolio-list";
 
 //@import ".";
-
-.section {
-  background-color: black;
-}
