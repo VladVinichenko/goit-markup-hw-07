@@ -1,0 +1,55 @@
+.command {
+  background: #f5f4fa;
+}
+
+.command-list-item-title,
+.command-list-item-text {
+  font-size: var(--seconary-font-size);
+  text-align: center;
+}
+
+.command-list-item-title {
+  font-weight: 500;
+  line-height: 1.19;
+  /*margin-top: 30px;*/
+  margin-bottom: 10px;
+}
+
+.command-list-item-text {
+  line-height: 1.19;
+  color: var(--seconary-colour);
+  margin-bottom: 16px;
+}
+
+.command-list {
+  margin-left: var(--primary-margin-reverse);
+  margin-top: var(--primary-margin-reverse);
+}
+
+.command-list-item {
+  margin-left: var(--primary-margin);
+  margin-top: var(--primary-margin);
+  flex-basis: var(--flex-x4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+}
+
+.command-title {
+  padding: 30px;
+}
+
+/*SOCIAL*/
+.social-list-command {
+  justify-content: space-between;
+}
+
+.social-list-icon-command {
+  fill: var(--tripple-colour);
+}
+
+.social-list-item-link-command {
+  background-color: var(--dark-text-colour);
+}
+/*END SOCIAL*/

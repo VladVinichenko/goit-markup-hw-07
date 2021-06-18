@@ -1,0 +1,133 @@
+.footer {
+  background-color: var(--background-colour);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address-footer {
+  margin-top: 20px;
+}
+
+.address-footer-list {
+  flex-direction: column;
+}
+
+.address-footer-list > .address-footer-list-title:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-footer-list-title-link-map,
+.address-footer-list-title-link {
+  font-style: inherit;
+  line-height: 1.71;
+}
+
+.address-footer-list-title-link-map {
+  color: var(--dark-text-colour);
+}
+
+.address-footer-list-title-link {
+  color: var(--footer-link-colour);
+}
+
+.footer-text-social {
+  font-family: Roboto, sans-serif;
+  font-size: var(--main-font);
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--dark-text-colour);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.footer-container-form {
+  margin-left: auto;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-container-box {
+  margin-right: 70px;
+}
+
+.footer-container-box-subscribe {
+  display: flex;
+}
+
+.subscribe-title {
+  text-transform: uppercase;
+  color: var(--dark-text-colour);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.subscribe-form-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 50px;
+  overflow: auto;
+  font-size: var(--seconary-font-size);
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  width: 358px;
+  transition: border var(--anim-d) var(--anim-t);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn-icon {
+  margin-left: 10px;
+}
+
+.subscribe-btn {
+  margin-left: 12px;
+}
+
+.subscribe-form-input:focus {
+  border: 1px solid var(--focus-colour);
+}
+.subscribe-form-input:focus {
+  outline: none;
+}
+
+/*
+.subscribe-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+*/
+.subscribe-btn {
+  font-size: var(--seconary-font-size);
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--dark-text-colour);
+}
+
+.subscribe-box {
+  display: flex;
+}
+
+/*SOCIAL*/
+.social-list-footer > .social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-icon-footer {
+  fill: var(--dark-text-colour);
+}
+
+.social-list-item-link-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/*END SOCIAL*/
