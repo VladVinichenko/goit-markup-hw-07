@@ -1,4 +1,4 @@
-.s-btn {
+.main-button {
   background: var(--focus-colour);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -14,10 +14,10 @@
 
   &:hover,
   &:focus {
-    background: var(--hero-button-focus-colour);
+    background: var(--hero__button-focus-colour);
   }
 }
 
-.s-btn-icon {
+.main-button-icon {
   fill: var(--dark-text-colour);
 }
