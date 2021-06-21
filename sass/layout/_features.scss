@@ -23,12 +23,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /*
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  padding-right: 100px;
-  */
   width: 270px;
   height: 120px;
   background-color: var(--button-background-colour);
@@ -36,11 +30,6 @@
 
   margin-bottom: var(--primary-margin);
 }
-
-/*.features-list > .features-block:not(:last-child) {
-  margin-right: 30px;
-}
-*/
 
 .features-block {
   margin-left: var(--primary-margin);

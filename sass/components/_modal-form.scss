@@ -10,16 +10,7 @@
   margin-bottom: 12px;
   font-weight: 700;
 }
-/*
-.modal-form-subtitle {
-  margin-bottom: 15px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--seconary-colour);
-  width: 100%;
-}
-*/
+
 .modal-form-input,
 .modal-user-comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -35,6 +26,15 @@
   line-height: 1.67;
   letter-spacing: 0.01em;
   margin-top: 4px;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    border: 1px solid var(--focus-colour);
+    outline: none;
+  }
 }
 
 .modal-form-input-wrapper {
@@ -75,39 +75,15 @@
   padding: 12px 16px;
 }
 
-.modal-form-input::placeholder,
-.modal-user-comment::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
 .modal-form-input {
   height: 40px;
   padding-left: 42px;
   cursor: pointer;
-}
 
-.modal-form-input:focus,
-.modal-user-comment:focus {
-  border: 1px solid var(--focus-colour);
-  outline: none;
+  &:focus + .modal-form-input-icon {
+    fill: var(--focus-colour);
+  }
 }
-
-.modal-form-input:focus + .modal-form-input-icon {
-  fill: var(--focus-colour);
-}
-/*
-.our-license-check-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: var(--primary-margin);
-}
-*/
-
-/*
-.our-license-check {
-  margin-right: 7px;
-}*/
 
 .our-license-check-z {
   line-height: 1.71;
@@ -142,11 +118,11 @@
   border: none;
   cursor: pointer;
   transition: background var(--anim-d) var(--anim-t);
-}
 
-.send-btn:hover,
-.send-btn:focus {
-  background: var(--hero-button-focus-colour);
+  &:hover,
+  &:focus {
+    background: var(--hero-button-focus-colour);
+  }
 }
 
 .send-btn-box {
@@ -154,13 +130,6 @@
   justify-content: center;
   margin-top: var(--primary-margin);
 }
-
-/*
-.modal-form-input:required:focus:invalid,
-.modal-form-input:required:focus:not(:placeholder-shown):invalid{
-  border-color: red;
-}
-*/
 
 .user-accept-license::before {
   display: inline-block;
@@ -172,15 +141,14 @@
   vertical-align: middle;
 }
 
-.our-license-check:checked + .user-accept-license::before {
-  background-image: url("../images/check-valid.svg");
-}
-
-.our-license-check:focus + .user-accept-license::before {
-  /*box-shadow: 0px 4px 4px var(--focus-colour);*/
-  outline: 2px solid var(--focus-colour);
-}
-
 .our-license-check {
   vertical-align: middle;
+
+  &:checked + .user-accept-license::before {
+    background-image: url("../images/check-valid.svg");
+  }
+
+  &:focus + .user-accept-license::before {
+    outline: 2px solid var(--focus-colour);
+  }
 }

@@ -19,6 +19,7 @@
   color: var(--dark-text-colour);
   margin-left: auto;
   margin-right: auto;
+  box-shadow: none;
 }
 
 .hero-title {
@@ -28,31 +29,4 @@
   text-transform: uppercase;
   margin-bottom: 30px;
   width: 696px;
-  /* height: 120px;*/
-}
-
-.hero-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  background-color: var(--focus-colour);
-  cursor: pointer;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 4px;
-  padding: 10px 32px;
-  border: 0px;
-  transition: background-color var(--anim-d) var(--anim-t);
-}
-
-.hero-button:hover,
-.hero-button:focus,
-.hero-button {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--hero-button-focus-colour);
 }

@@ -11,6 +11,16 @@
   align-items: center;
   width: 170px;
   height: 92px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--focus-colour);
+  }
+
+  &:hover .clients-svg,
+  &:focus .clients-svg {
+    fill: var(--focus-colour);
+  }
 }
 
 .clients-svg {
@@ -18,16 +28,6 @@
   width: 106px;
   fill: var(--tripple-colour);
   transition: fill var(--anim-d) var(--anim-t);
-}
-
-.clients-list-link:hover,
-.clients-list-link:focus {
-  border: 1px solid var(--focus-colour);
-}
-
-.clients-list-link:hover .clients-svg,
-.clients-list-link:focus .clients-svg {
-  fill: var(--focus-colour);
 }
 
 .clients-list-item {

@@ -10,10 +10,10 @@
 
 .address-footer-list {
   flex-direction: column;
-}
 
-.address-footer-list > .address-footer-list-title:not(:last-child) {
-  margin-bottom: 9px;
+  & > .address-footer-list-title:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address-footer-list-title-link-map,
@@ -82,6 +82,11 @@
   transition: border var(--anim-d) var(--anim-t);
   cursor: pointer;
   color: rgba(255, 255, 255, 0.6);
+
+  &:focus {
+    border: 1px solid var(--focus-colour);
+    outline: none;
+  }
 }
 
 .subscribe-btn-icon {
@@ -92,18 +97,6 @@
   margin-left: 12px;
 }
 
-.subscribe-form-input:focus {
-  border: 1px solid var(--focus-colour);
-}
-.subscribe-form-input:focus {
-  outline: none;
-}
-
-/*
-.subscribe-form-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-*/
 .subscribe-btn {
   font-size: var(--seconary-font-size);
   line-height: 1.88;
