@@ -1,107 +1,35 @@
 .header {
   border-bottom: 1px solid #ececec;
-}
 
-.header__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
+  &__contact-item {
+    &:last-child {
+      margin-left: var(--menu-interval);
+    }
+  }
 
-.header__logo,
-.menu,
-.header__contact {
-  align-items: center;
-}
-
-.menu__link,
-.menu-contact {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-colour);
-  transition: color var(--anim-d) var(--anim-t);
-
-  &:hover,
-  &:focus {
-    color: var(--focus-colour);
+  &__contact-svg {
+    fill: var(--seconary-colour);
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    transition: fill var(--anim-d) var(--anim-t);
   }
 }
 
-.header__contact {
+&__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+
+&__contact {
   margin-left: auto;
   align-items: center;
 }
 
-.menu,
-.header__container,
-.header__nav,
-.header__contact {
+&__container,
+&__nav,
+&__contact {
   display: flex;
-}
-
-.menu__item {
-  position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.current-link {
-  color: var(--focus-colour);
-
-  &.menu__link::after {
-    opacity: 1;
-  }
-}
-
-.menu__item {
-  position: relative;
-
-  .menu > &:not(:last-child) {
-    margin-right: var(--menu-interval);
-  }
-}
-
-.menu__link {
-  &:hover:after,
-  &:focus:after {
-    opacity: 1;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-color: var(--focus-colour);
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    bottom: -1px;
-    left: 0;
-    opacity: 0;
-    transition: opacity var(--anim-d) var(--anim-t);
-  }
-}
-
-.header__contact-item {
-  &:last-child {
-    margin-left: var(--menu-interval);
-  }
-}
-
-.contact-header-svg {
-  fill: var(--seconary-colour);
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  transition: fill var(--anim-d) var(--anim-t);
-}
-
-.menu-contact {
-  display: flex;
-  align-items: center;
-
-  &:hover .contact-header-svg,
-  &:focus .contact-header-svg {
-    fill: var(--focus-colour);
-  }
 }
