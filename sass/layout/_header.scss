@@ -14,22 +14,22 @@
     align-items: center;
     transition: fill var(--anim-d) var(--anim-t);
   }
-}
 
-&__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  align-items: center;
-}
+  &__logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    align-items: center;
+  }
 
-&__contact {
-  margin-left: auto;
-  align-items: center;
-}
+  &__contact {
+    margin-left: auto;
+    align-items: center;
+  }
 
-&__container,
-&__nav,
-&__contact {
-  display: flex;
+  &__container,
+  &__nav,
+  &__contact {
+    display: flex;
+  }
 }
